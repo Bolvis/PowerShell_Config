@@ -1,10 +1,9 @@
-if ($host.Name -eq 'ConsoleHost')
-{
+if ($host.Name -eq 'ConsoleHost') {
     Import-Module PSReadLine
     Import-Module posh-git
-	Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-	Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-	Set-PSReadLineOption -PredictionSource History
+    Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+    Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+    Set-PSReadLineOption -PredictionSource History
 
     function prompt {
         #Assign Windows Title Text
@@ -13,6 +12,7 @@ if ($host.Name -eq 'ConsoleHost')
         #Configure current user, current folder and date outputs
         $CmdPromptUser = [Security.Principal.WindowsIdentity]::GetCurrent();
         $Date = Get-Date -Format 'dddd hh:mm:ss tt'
+
 
         # Test for Admin / Elevated
         $IsAdmin = (New-Object Security.Principal.WindowsPrincipal ([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
@@ -42,14 +42,14 @@ if ($host.Name -eq 'ConsoleHost')
 
 
         # $host.UI.RawUI.ForegroundColor = "Yellow"
-        $host.UI.RawUI.ForegroundColor =  "DarkCyan"
-        $Host.UI.Write(([string]$pwd).Replace("C:\Users\dawid.stasiak", "~"))
+        $host.UI.RawUI.ForegroundColor = "DarkCyan"
+        $Host.UI.Write(([string]$pwd).Replace($HOME, "~"))
         $gitStatus = Write-VcsStatus
         $Host.UI.Write($gitStatus)
-	    $message =  " $date "
+        $message = " $date "
         $startposx = $Host.UI.RawUI.windowsize.width - $message.length
         $startposy = $Host.UI.RawUI.CursorPosition.Y
-        $Host.UI.RawUI.CursorPosition = New-Object System.Management.Automation.Host.Coordinates $startposx,$startposy
+        $Host.UI.RawUI.CursorPosition = New-Object System.Management.Automation.Host.Coordinates $startposx, $startposy
         $host.UI.RawUI.ForegroundColor = $oc
         $Host.UI.Write($message)
         $Host.UI.Write($([char]0x2192))
@@ -60,5 +60,5 @@ if ($host.Name -eq 'ConsoleHost')
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
+    Import-Module "$ChocolateyProfile"
 }
