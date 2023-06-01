@@ -38,7 +38,8 @@
         "list": 
         [
             {
-                "backgroundImage": "C:\\Users\\Dawid Stasiak\\PowerShell_Config\\background-scaled.jpg",
+                "backgroundImage": "C:\\Users\\dawid.stasiak\\PowerShell_Config\\background-scaled.jpg",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
@@ -46,44 +47,116 @@
             {
                 "altGrAliasing": true,
                 "antialiasingMode": "grayscale",
-                "backgroundImage": "C:\\Users\\Dawid Stasiak\\PowerShell_Config\\dab3t4p-d473760a-42c6-4e95-bcd5-80aee1cd6e59.png",
-                "closeOnExit": "graceful",
+                "closeOnExit": "automatic",
                 "colorScheme": "Campbell",
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe ssh dawids@192.168.0.16",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "cursorShape": "bar",
                 "font": 
                 {
                     "face": "Cascadia Mono",
-                    "size": 12
+                    "size": 12.0
                 },
-                "guid": "{eb8064dc-62f1-4b92-b765-63e7b9020f2e}",
+                "guid": "{c7b6d14b-d23f-4457-bf17-64d2dbdd9ebd}",
                 "hidden": false,
                 "historySize": 9001,
-                "icon": "C:\\Users\\Dawid Stasiak\\PowerShell_Config\\66626-gnu-controversy-operating-systems-linux-naming-debian.png",
-                "name": "Debian SSH",
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+                "name": "Command Prompt",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
-                "tabTitle": "Debian SSH",
-                "useAcrylic": true
+                "useAcrylic": false
             },
             {
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "backgroundImage": "C:\\Users\\dawid.stasiak\\PowerShell_Config\\japan-city-street-purple-aesthethic.jpg",
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
-                "name": "Command Prompt"
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
             },
             {
-                "backgroundImage": "C:\\Users\\Dawid Stasiak\\PowerShell_Config\\git-1.png",
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "backgroundImage": "C:\\Users\\dawid.stasiak\\PowerShell_Config\\japan-city-street-purple-aesthethic.jpg",
+                "colorScheme": "Ubuntu-ColorScheme",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "cursorShape": "filledBox",
+                "font":
+                {
+                    "face": "Cascadia Mono",
+                    "size": 13.0
+                },
+                "guid": "{5bc92651-f308-461f-80cd-583bcff3e406}",
                 "hidden": false,
-                "name": "Git Bash",
-                "source": "Git"
+                "icon": "C:\\Users\\dawid.stasiak\\PowerShell_Config\\git.png",
+                "name": "Gitbash",
+                "tabTitle": "Ubuntu"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe cd $HOME\\IdeaProjects\\ab\\contactmanager; git pull; cd $HOME\\IdeaProjects\\cc\\claimcenter; git pull; cd $HOME\\IdeaProjects\\bc\\billingcenter; git pull; cd $HOME\\IdeaProjects\\pc\\policycenter; git pull;cd $HOME\\IdeaProjects\\shared-code; git pull",
+                "guid": "{e473e9bb-40b2-420e-9330-a7574a4aebdf}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\PowerShell_Config\\git.png",
+                "name": "Pull all GWEC changes"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe  cd $HOME\\IdeaProjects\\cc\\claimcenter; .\\gwb studio",
+                "guid": "{bd14616c-82f3-414e-b4c3-f33e61346042}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\IdeaProjects\\cc\\claimcenter\\modules\\configuration\\webresources\\img\\app\\favicon.ico",
+                "name": "Start CC studio"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe cd $HOME\\IdeaProjects\\ab\\contactmanager; .\\gwb studio",
+                "guid": "{9bcd8ce9-894b-48f5-995b-458c3f695357}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\IdeaProjects\\ab\\contactmanager\\modules\\configuration\\webresources\\img\\app\\favicon.ico",
+                "name": "Start CM studio"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe  cd $HOME\\IdeaProjects\\bc\\billingcenter; .\\gwb studio",
+                "guid": "{1dacb1ed-8729-4b46-af5d-4ffc0d29e82f}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\IdeaProjects\\bc\\billingcenter\\modules\\configuration\\webresources\\img\\app\\favicon.ico",
+                "name": "Start BC studio"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe  cd $HOME\\IdeaProjects\\pc\\policycenter; .\\gwb studio",
+                "guid": "{217f52ff-7dcc-43a2-b81a-f69d6abec73b}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\IdeaProjects\\pc\\policycenter\\modules\\configuration\\webresources\\img\\app\\favicon.ico",
+                "name": "Start PC studio"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe  cd $HOME\\IdeaProjects\\cc\\claimcenter; .\\gwb runServer",
+                "guid": "{f6da0803-3705-48e9-9aaf-51b4538f0dbe}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\IdeaProjects\\cc\\claimcenter\\modules\\configuration\\webresources\\img\\app\\favicon.ico",
+                "name": "Start CC server "
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe cd $HOME\\IdeaProjects\\ab\\contactmanager; .\\gwb runServer",
+                "guid": "{560e45e0-cae3-4c28-95fa-d79261663fd2}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\IdeaProjects\\ab\\contactmanager\\modules\\configuration\\webresources\\img\\app\\favicon.ico",
+                "name": "Start CM server"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe cd $HOME\\IdeaProjects\\bc\\billingcenter; .\\gwb runServer",
+                "guid": "{a480027d-693c-42fe-ad5e-805ed69ce9a4}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\IdeaProjects\\bc\\billingcenter\\modules\\configuration\\webresources\\img\\app\\favicon.ico",
+                "name": "Start BC server"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe  cd $HOME\\IdeaProjects\\pc\\policycenter; .\\gwb runServer",
+                "guid": "{58dc39d5-58a4-4084-ad9a-c12dfcdc5b05}",
+                "hidden": false,
+                "icon": "C:\\Users\\dawid.stasiak\\IdeaProjects\\pc\\policycenter\\modules\\configuration\\webresources\\img\\app\\favicon.ico",
+                "name": "Start PC server"
             }
         ]
     },
@@ -274,6 +347,29 @@
             "yellow": "#C4A000"
         },
         {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -296,5 +392,6 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "themes": []
 }
