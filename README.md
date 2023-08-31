@@ -3,6 +3,6 @@
 <h2>Setup</h2>
 
 ```powershell
-Install-Module PSReadLine
+Install-Module PSReadLine -Scope CurrentUser -Force
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 ```
